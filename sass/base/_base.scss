@@ -1,0 +1,19 @@
+/* RESET */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PROJECT WIDE FONT DEFINITIONS */
+
+body {
+	
+    font-family: 'Merriweather', serif;
+    font-weight: 400;              
+    line-height: 1.7;
+    padding: 6.5px;
+}

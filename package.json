@@ -1,0 +1,14 @@
+{
+  "name": "tourthelights",
+  "version": "1.0.0",
+  "description": "Landing page for tourthelights",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Janet",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

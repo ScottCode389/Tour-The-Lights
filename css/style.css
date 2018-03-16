@@ -1,0 +1,85 @@
+/* RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* PROJECT WIDE FONT DEFINITIONS */
+body {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 6.5px; }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1; } }
+
+header {
+  background: url("../img/headerImagecropblue.jpg") no-repeat top left;
+  background-size: cover;
+  height: 400px;
+  border: 1px solid #000;
+  position: relative; }
+
+.heading-primary {
+  color: #000;
+  padding-left: 20px;
+  backface-visibility: hidden; }
+  .heading-primary--main {
+    display: block;
+    font-size: 41px;
+    padding-top: 30px;
+    animation: moveInRight 2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .heading-primary--sub {
+    display: block;
+    font-size: 31px;
+    font-style: italic;
+    animation: moveInRight 2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+.sandSection {
+  background: url("../img/seigaiha.png") repeat top left;
+  margin: 10px 0;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px 30px;
+  border: 1px dotted #000; }
+
+.navigation {
+  width: 60%;
+  float: left;
+  position: absolute;
+  bottom: 32px;
+  left: 20px;
+  opacity: 0;
+  animation: 1s fadeIn 2.2s forwards; }
+  .navigation__item {
+    margin-right: 10px;
+    list-style: none;
+    display: inline-block; }
+  .navigation__link:link, .navigation__link:visited {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px 20px;
+    color: #000;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid #000;
+    border-radius: 10%;
+    text-decoration: none;
+    background-image: linear-gradient(115deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 220%;
+    transition: all .3s; }
+  .navigation__link:hover, .navigation__link:active {
+    background-position: 100%;
+    color: #00688B;
+    border: 1px solid #00688B; }

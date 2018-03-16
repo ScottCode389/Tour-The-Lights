@@ -1,0 +1,40 @@
+.navigation {
+	width: 60%;
+    float: left;
+    position:absolute;
+    bottom: 32px;
+    left: 20px;
+    opacity: 0;
+    animation: 1s fadeIn 2.2s forwards;
+
+    &__item {
+        margin-right: 10px;
+        list-style: none;
+        display: inline-block;
+    }
+
+    &__link {
+        &:link,
+        &:visited {        
+            font-size: 17px;
+            font-weight: 600;
+            padding: 10px 20px;
+            color: $color-black;
+            background: rgba($color-black, .1);
+            border: 1px solid $color-black;
+            border-radius: 10%;
+            text-decoration: none;
+            background-image: linear-gradient(115deg, transparent 0%, transparent 50%, $color-white 50%);
+            background-size: 220%;
+            transition: all .3s;
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-nav-font;
+            border: 1px solid $color-nav-font;
+           
+        }
+    }
+}
