@@ -7,20 +7,27 @@
     opacity: 0;
     animation: 1s fadeIn 2.2s forwards;
 
+    &__list {
+        display: flex;
+    }
+
     &__item {
-        margin-right: 10px;
+        margin-right: 10px;              
         list-style: none;
-        display: inline-block;
+        // display: inline-block;
     }
 
     &__link {
         &:link,
-        &:visited {        
+        &:visited {  
+            display: inline-block;
+            text-align: center;      
             font-size: 17px;
-            font-weight: 600;
-            padding: 10px 20px;
+            font-weight: 600; 
+            width: 140px;           
+            padding: 10px 15px;
             color: $color-black;
-            background: rgba($color-black, .1);
+            background: rgba($color-black, .075);
             border: 1px solid $color-black;
             border-radius: 10%;
             text-decoration: none;
@@ -37,4 +44,9 @@
            
         }
     }
+    &__current-item {
+        border: 2px solid $color-black !important; 
+        padding: 9px 14px !important;      
+    }    
 }
+

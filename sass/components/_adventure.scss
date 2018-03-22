@@ -1,0 +1,87 @@
+.adventure {
+    display: flex;
+    // background: #B0E0E6;
+    background: #c3e4ed;
+    margin-top: 10px;
+    padding-top: 40px;
+    height: 550px;
+}
+
+.advText {
+    width: 50%; 
+    padding-left: 40px;
+    padding-right: 20px; 
+    
+    & h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+     
+    & p:not(last-child) {    
+            margin-bottom: 20px;
+    } 
+    
+    & p span {
+        font-weight: bold;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    & .italic {
+        font-style: italic;
+    }
+}
+
+.helpbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & i {
+        color: #00688B;
+        margin-right: 15px;
+    }
+
+    & a {
+        color: #00688B;
+        font-weight: bold;
+    }
+}
+ 
+.advPhotos {
+    width: 50%;    
+    padding: 0 20px;
+    position: relative;
+
+    &__photo {  
+        width: 40%;      
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 2px;
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 5px;
+
+        &--p1 {
+            left: 20%;
+            top: 85px; 
+        }
+
+        &--p2 {
+            right: 65px;
+            top: 122px;
+        }
+
+        &--p3 {
+            left: 28%;
+            top: 218px;
+        }
+
+        &:hover {
+            outline: 3px solid #4372AA;
+            transform: scale(1.075);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }        
+    }
+}

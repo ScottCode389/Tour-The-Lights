@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 	<title>Tour The Lights > Home </title>
 </head>
@@ -16,10 +18,10 @@
         </h1> 
         <nav class="navigation">
             <ul class = "navigation__list">
-                <li class = "navigation__item"><a href="index.html" class = "navigation__link" title="Tour the Lights">Home</a></li>
+                <li class = "navigation__item"><a href="index.html" class = "navigation__link navigation__current-item" title="Tour the Lights">Home</a></li>
                 <li class = "navigation__item"><a href="lighthouseAboutUs.html" class = "navigation__link" title="About Us|Tour the Lights">About Us</a></li>
                 <li class = "navigation__item"><a href="lighthouseTours.html" class = "navigation__link" title="Destinations|Tour the Lights">Destinations</a></li>	
-                <li class = "navigation__item"><a href="lighthouseEvents.html" class = "navigation__link" title="Events|Tour the Lights">Events</a></li>
+                <!-- <li class = "navigation__item"><a href="lighthouseEvents.html" class = "navigation__link" title="Events|Tour the Lights">Events</a></li> -->
                 <li class = "navigation__item"><a href="lighthouseContacts.html" class = "navigation__link" title="Contact Us|Tour the Lights">Contact Us</a></li>
             </ul>
         </nav>  
@@ -27,8 +29,28 @@
 
      <div class="sandSection">
         <h3>We Are The Lighthouse Tour Experts</h3>
-        <p><strong>Tour the Lights</strong> proudly provides an exciting array of vacations centered around a visit to any one or group of U.S. lighthouses.  With over 1,000 	lighthouses dotting the coastal United States, we help you choose the experience that is just right for you!  With over 5 years of experience, we have the knowledge 	to assist you with all of your vacation planning, including group travel, and escorted and hosted tours.   Each travel agent is friendly, helpful and looking forward 	to developing your perfect itinerary!</p>
+        <p><strong>Tour the Lights</strong> proudly provides an exciting array of vacations centered around a visit to any one or group of U.S. lighthouses.  With over 1,000 	lighthouses dotting the coastal United States, we help you choose the experience that is just right for you!  With over 5 years of experience, we have the knowledge 	to assist you with all of your vacation planning, including group travel, and escorted and hosted tours.   Each travel agent is friendly, helpful and looking forward 	to developing your perfect itinerary!</p>        
     </div>
+
+    <section class="adventure">
+        <div class="advText">
+            <h1>Looking for Adventure?</h1>
+            <p>Are you up for hiking to a remote lighthouse with a steep climb but gorgeous views and that offers a great location for whale watching?</p>
+            <p>Or are you fascinated by the paranormal and looking to find some evening ghost tours and scintillating stories of the past?</p>
+            <p>Or maybe just a visit to one of our National Parks and Seashores to climb to the top of a lighthouse and see the fabulous expanse of water before you?</p>
+            <p class = "italic">Click on an image at the right to learn more about this month's featured destinations! <span>&rArr;</span></p>
+            <div class="helpbutton">
+                <i class="fa fa-thumbs-up"></i>
+                <a href="#" class="btn-text">We can help!</a>      
+             </div>      
+        </div>
+        <div class="advPhotos">  <!-- images from Unsplash.com -->
+            <a href= "https://www.nps.gov/pore/planyourvisit/lighthouse.htm" target="_blank"><img srcset="img/PointReyesSmall.jpg 300w, img/PointReyesLarge.jpg 1000w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" alt="Photo 1" class="advPhotos__photo advPhotos__photo--p1"></a>     
+            <a href= "http://www.pensacolalighthouse.org/index/tours/ghost-hunt" target="_blank"><img srcset="img/HauntedSmall.jpg 300w, img/HauntedLarge.jpg 1000w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" alt="Photo 2" class="advPhotos__photo advPhotos__photo--p2"></a>
+
+            <a href= "https://www.nps.gov/calo/planyourvisit/lighthouse-climbs.htm" target="_blank"><img srcset="img/CapeLookoutSmall.jpg300w, img/CapeLookoutLarge.jpg 1000w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" alt="Photo 3" class="advPhotos__photo advPhotos__photo--p3"></a>
+        </div>
+    </section>
 	
 </body>
 </html>

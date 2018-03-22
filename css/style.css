@@ -13,6 +13,67 @@ body {
   line-height: 1.7;
   padding: 6.5px; }
 
+.adventure {
+  display: flex;
+  background: #c3e4ed;
+  margin-top: 10px;
+  padding-top: 40px;
+  height: 550px; }
+
+.advText {
+  width: 50%;
+  padding-left: 40px;
+  padding-right: 20px; }
+  .advText h1 {
+    text-align: center;
+    margin-bottom: 20px; }
+  .advText p:not(last-child) {
+    margin-bottom: 20px; }
+  .advText p span {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px; }
+  .advText .italic {
+    font-style: italic; }
+
+.helpbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .helpbutton i {
+    color: #00688B;
+    margin-right: 15px; }
+  .helpbutton a {
+    color: #00688B;
+    font-weight: bold; }
+
+.advPhotos {
+  width: 50%;
+  padding: 0 20px;
+  position: relative; }
+  .advPhotos__photo {
+    width: 40%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 5px; }
+    .advPhotos__photo--p1 {
+      left: 20%;
+      top: 85px; }
+    .advPhotos__photo--p2 {
+      right: 65px;
+      top: 122px; }
+    .advPhotos__photo--p3 {
+      left: 28%;
+      top: 218px; }
+    .advPhotos__photo:hover {
+      outline: 3px solid #4372AA;
+      transform: scale(1.075);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -63,16 +124,20 @@ header {
   left: 20px;
   opacity: 0;
   animation: 1s fadeIn 2.2s forwards; }
+  .navigation__list {
+    display: flex; }
   .navigation__item {
     margin-right: 10px;
-    list-style: none;
-    display: inline-block; }
+    list-style: none; }
   .navigation__link:link, .navigation__link:visited {
+    display: inline-block;
+    text-align: center;
     font-size: 17px;
     font-weight: 600;
-    padding: 10px 20px;
+    width: 140px;
+    padding: 10px 15px;
     color: #000;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.075);
     border: 1px solid #000;
     border-radius: 10%;
     text-decoration: none;
@@ -83,3 +148,6 @@ header {
     background-position: 100%;
     color: #00688B;
     border: 1px solid #00688B; }
+  .navigation__current-item {
+    border: 2px solid #000 !important;
+    padding: 9px 14px !important; }
