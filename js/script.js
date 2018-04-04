@@ -19,6 +19,21 @@ $('.js--wp-3').waypoint(function(direction) {
     {offset: '50%'
 });
 
+$('.js--wp-4').waypoint(function(direction) {
+  $('.js--wp-4').addClass('animated fadeInUp');},
+  {offset: '50%'
+});
+
+$('.js--wp-5').waypoint(function(direction) {
+  $('.js--wp-5').addClass('animated fadeInUp');},
+  {offset: '50%'
+});
+
+$('.js--wp-6').waypoint(function(direction) {
+  $('.js--wp-6').addClass('animated fadeInUp');},
+  {offset: '50%'
+});
+
   
   var map1 = new GMaps({
     div: '.map1',

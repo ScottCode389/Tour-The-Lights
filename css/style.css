@@ -24,12 +24,11 @@ ul {
   list-style: none; }
 
 .adventure {
-  margin: 10px auto;
+  margin: 0 auto;
   display: flex;
   background: #95b7c0;
   padding-top: 40px;
-  height: 550px;
-  box-shadow: 0 3px 5px 3px grey; }
+  height: 550px; }
 
 .advText {
   width: 50%;
@@ -131,26 +130,23 @@ header {
     font-style: italic;
     animation: moveInRight 2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 
-.contact_info {
-  position: absolute;
-  color: blue;
-  right: 200px;
-  bottom: 20px;
-  height: 100px;
-  width: 100px;
-  background: white; }
-
 .introduction {
   background: #fff;
   font-size: 18px;
   text-align: center;
-  padding: 15px 30px;
+  padding: 25px 30px;
   border: 1px dotted #000;
   box-shadow: 0 5px 5px 0 grey; }
   .introduction__heading {
     margin-top: 40px; }
     .introduction__heading span {
       margin: 0 15px; }
+
+.featureImages {
+  display: flex;
+  padding-top: 30px; }
+  .featureImages img {
+    width: 75%; }
 
 .features {
   display: flex;
@@ -336,12 +332,18 @@ header {
 
 .js--wp-1,
 .js--wp-2,
-.js--wp-3 {
+.js--wp-3,
+.js--wp-4,
+.js--wp-5,
+.js--wp-6 {
   opacity: 0;
   -webkit-animation-duration: .75s;
   animation-duration: .75s; }
 
 .js--wp-1.animated,
 .js--wp-2.animated,
-.js--wp-3.animated {
+.js--wp-3.animated,
+.js--wp-4.animated,
+.js--wp-5.animated,
+.js--wp-6.animated {
   opacity: 1; }
