@@ -1,22 +1,20 @@
 .adventure {
-    display: flex;
-    // background: #B0E0E6;
-    background: #c3e4ed;
-    margin-top: 10px;
+    // width: 90%;
+    margin: 10px auto;
+    display: flex;   
+    // background: $color-teal-light;      
+    background: $color-new-teal;     
     padding-top: 40px;
-    height: 550px;
+    height: 550px;    
+    // box-shadow: 3px 5px 10px 0 grey;
+    box-shadow: 0 3px 5px 3px grey;
 }
 
 .advText {
     width: 50%; 
-    padding-left: 40px;
-    padding-right: 20px; 
+    padding-left: 45px;
+    padding-right: 20px;     
     
-    & h1 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-     
     & p:not(last-child) {    
             margin-bottom: 20px;
     } 
@@ -38,12 +36,12 @@
     align-items: center;
 
     & i {
-        color: #00688B;
+        color: $color-teal-nav-font;
         margin-right: 15px;
     }
 
     & a {
-        color: #00688B;
+        color: $color-teal-nav-font;
         font-weight: bold;
     }
 }
@@ -68,20 +66,24 @@
         }
 
         &--p2 {
-            right: 65px;
+            right: 67px;
             top: 122px;
         }
 
         &--p3 {
             left: 28%;
-            top: 218px;
+            top: 217px;
         }
 
         &:hover {
-            outline: 3px solid #4372AA;
-            transform: scale(1.075);
+            outline: 3px solid $color-blue-outline;
+            transform: scale(1.075) translateY(-5px);
             box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
             z-index: 20;
         }        
+    }
+
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);
     }
 }

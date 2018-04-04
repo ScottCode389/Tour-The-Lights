@@ -1,8 +1,84 @@
-.sandSection {
-    background: url("../img/seigaiha.png") repeat top left;
-    margin: 10px 0;
+.introduction {
+    // background: url("../img/seigaiha.png") repeat top left;
+    background: #fff;
+    // margin: 10px 0;
     font-size: 18px;
     text-align: center;
     padding: 15px 30px;
-    border: 1px dotted $color-black;    
+    border: 1px dotted $color-black;  
+    box-shadow: 0 5px 5px 0 grey; 
+    
+    &__heading {
+        margin-top: 40px;
+        
+        & span {
+            margin: 0 15px;
+        }
+    }
+}
+
+// .introSidebars {
+//     display: flex;    
+//     justify-content: space-around;
+//     height: 800px;
+// }
+
+// .featureImages {
+//     display: flex;
+//     flex-direction: column;
+//     width: 50%;
+//     height: 600px;
+//     overflow: hidden;
+
+//     & img {        
+//         width: 75%;
+//     }
+
+    
+// }
+
+.features {
+    display: flex;
+    // flex-direction: column;
+    // width: 50%;
+    // height: 600px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    justify-content: space-around;
+
+    
+    
+
+    & i {
+        margin: 0 10px;
+    }
+
+    & h4 {
+        font-size: 18px;
+        margin: 10px 0;  
+        border-bottom: 1px solid $color-grey-light-2;
+        color: $color-black;      
+    }
+
+    & li {
+        color: #616161;
+        font-size: 16px;
+    }
+    
+    &__box1 {
+        color: $color-green-tour;
+        font-weight: bold;
+    }
+
+    &__box2 {
+        color: $color-blue-outline;
+        font-weight: bold;
+    }
+
+    &__box3 {
+        color: $color-purple-tour-3;
+        font-weight: bold;
+    }
+
+    
 }

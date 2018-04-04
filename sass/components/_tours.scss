@@ -1,0 +1,198 @@
+.tours {
+    height: 750px;    
+    // background: #99B3BA; 
+    background: $color-blue-header;
+    border-top: .5px solid $color-grey-light-1;
+    box-shadow:inset 0 1px 5px 0 $color-teal-nav-font, 0 5px 5px 0 grey;
+    
+    & h2 {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        color: $color-white;
+    }    
+}
+
+.planbox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    perspective: 1500px;
+    -moz-perspective: 1500px;
+    width: 25%; 
+    height: 475px;      
+    // color: $color-blue-tours;      
+    position: relative;
+    
+    &__face {      
+        background: $color-white;
+        // border: 1px solid $color-teal-nav-font;    
+        transition: all 1.5s .05s ease; 
+        height: 475px;
+        width: 100%; 
+        position: absolute;
+        top: 0;
+        left: 0;  
+        backface-visibility: hidden;          
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba($color-black, .15);  
+    
+        &--back {        
+        transform: rotateY(180deg);                
+
+            &-1 {
+            background-image: linear-gradient(to right bottom, $color-green-tour-light, $color-green-tour);
+            }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, #abcef6, #4372AA);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, rgb(230, 188, 255), rgb(162, 119, 187));
+
+                // background-image: linear-gradient(to right bottom, #B8F0FF, #80BECE);          
+            }
+        }
+    }
+        
+        &:hover &__face--front {
+            transform: rotateY(-180deg);
+        }
+
+        &:hover &__face--back {
+            transform: rotateY(0);
+        } 
+    
+
+    &__picture {
+        background-size: cover;
+        height: 150px;
+        // background-blend-mode: screen;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+
+            &-1 {
+                background-image: url("../img/MarshallPointLH_ME.jpg");
+            }
+
+            &-2 {
+                background-image: url("../img/HecetaHead_OR.jpg");        
+            }
+
+            &-3 {
+                background-image: url("../img/WaltonLH_SantaCruzCA_distance.jpg");
+            }
+    }
+
+    &__heading {
+        position: absolute;
+        top: 120px;
+        left: 10px;
+        font-size: 18px;
+        color: $color-white;
+        width: 45%;
+    }
+
+    &__heading-span {
+        padding: .5rem 1rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background: $color-green-tour;
+        }
+
+        &--2 {
+            background: $color-blue-outline;
+        }
+
+        &--3 {
+               
+            background: $color-purple-tour-3;
+        }
+    }
+
+    &__details {
+        padding-top: 22px;
+        margin-top: 40px;
+        
+        & ul {            
+            width: 80%;
+            margin: 0 auto;            
+
+            & li {
+                font-size: 16px;
+                font-weight: 700;
+                padding-bottom: 6px;
+                text-align: center;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+            }
+        }
+    }
+
+    &__cta {
+        display: flex;        
+        flex-direction: column;        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);        
+        width: 70%;          
+        justify-content: space-around; 
+        align-content: center; 
+        
+        & a {
+            text-decoration: none;
+            color: $color-black;
+        }
+    }      
+}
+
+.map {        
+    height: 250px;
+    width: 100%;        
+    border: 1px solid black;
+    align-self: center;        
+} 
+
+.btn {
+    background: $color-white;
+    height: 50px;    
+    margin: 50px auto;
+    padding: 10px 20px;
+    text-align: center;
+    vertical-align: center;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 0 4px 6px rgba($color-black, .15);
+    transition: all .2s ease-in-out;
+
+    &-tour {
+        width: 30%;
+    }
+
+    &:hover {
+        transform: scale(1.05);                    
+        box-shadow: 0 6px 8px rgba($color-black, .15);         
+    }
+}
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: .75s;
+            animation-duration: .75s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
+
