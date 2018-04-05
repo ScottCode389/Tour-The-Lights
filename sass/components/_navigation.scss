@@ -2,7 +2,7 @@
 	width: 60%;
     float: left;
     position:absolute;
-    bottom: 32px;
+    bottom: 185px;
     left: 20px;
     opacity: 0;
     animation: 1s fadeIn 2.2s forwards;
@@ -44,9 +44,9 @@
            
         }
     }
-    &__current-item {
-        border: 2px solid $color-black !important; 
-        padding: 9px 14px !important;      
-    }    
+    // &__current-item {
+    //     border: 2px solid $color-black !important; 
+    //     padding: 9px 14px !important;      
+    // }    
 }
 

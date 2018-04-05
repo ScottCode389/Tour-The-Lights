@@ -5,8 +5,8 @@
     font-size: 18px;
     text-align: center;
     padding: 25px 30px;
-    border: 1px dotted $color-black;  
-    box-shadow: 0 5px 5px 0 grey; 
+    // border: 1px solid $color-teal-dark;  
+    box-shadow: 0 5px 5px 0 $color-teal-dark; 
     
     &__heading {
         margin-top: 40px;
