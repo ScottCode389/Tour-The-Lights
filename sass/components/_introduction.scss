@@ -25,6 +25,8 @@
 
 .featureImages {
     display: flex;
+    flex: 0 1 1;
+
     padding-top: 30px;
 
     & img {        

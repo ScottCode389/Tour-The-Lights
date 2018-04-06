@@ -34,10 +34,15 @@ header {
 .quickContact {
     display: flex;
     flex-direction: column;
+    //color: $color-teal-header-address;   
+    color: $color-black; 
+    padding: 0 10px;
+    font-weight: 900;
+    text-shadow: 0 .25px .25px $color-black;
     position: absolute;
     bottom: 185px;
     left: 700px;
-    font-size: 17px;
-
+    font-size: 18px;
+    animation: fadeIn 5s;
 }
 

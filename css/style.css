@@ -92,6 +92,10 @@ ul {
     transform: translate(0); } }
 
 @keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
   100% {
     opacity: 1; } }
 
@@ -120,23 +124,33 @@ ul {
   border: 15px solid #fff; }
   .contacts__sidebar {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    flex: 0 1 406px;
+    line-height: 1.5; }
   .contacts__sidebar1 {
     font-style: italic;
-    font-size: 15px;
+    font-size: 16px;
     justify-content: center; }
     .contacts__sidebar1 img {
       margin: 0 auto;
-      height: 125px;
-      padding-bottom: 10px; }
+      height: 115px;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      border-radius: 5%; }
+    .contacts__sidebar1 p {
+      margin-top: 9px; }
   .contacts__sidebar2 {
     justify-content: center;
-    font-size: 16px; }
+    font-size: 17px; }
     .contacts__sidebar2 span {
       font-size: 18px;
       font-weight: 900;
-      border-bottom: 1px solid #95b7c0;
-      padding-bottom: 7px; }
+      padding-bottom: 2px; }
+    .contacts__sidebar2 hr {
+      width: 50%;
+      height: 1px;
+      margin: 9px auto;
+      color: #95b7c0;
+      border: 1px solid #95b7c0; }
 
 footer {
   background: #fff;
@@ -172,10 +186,15 @@ header {
 .quickContact {
   display: flex;
   flex-direction: column;
+  color: #000;
+  padding: 0 10px;
+  font-weight: 900;
+  text-shadow: 0 0.25px 0.25px #000;
   position: absolute;
   bottom: 185px;
   left: 700px;
-  font-size: 17px; }
+  font-size: 18px;
+  animation: fadeIn 5s; }
 
 .introduction {
   background: #fff;
@@ -190,6 +209,7 @@ header {
 
 .featureImages {
   display: flex;
+  flex: 0 1 1;
   padding-top: 30px; }
   .featureImages img {
     width: 75%; }
@@ -263,7 +283,8 @@ header {
 
 .planbox {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  flex: 1; }
 
 .card {
   perspective: 1500px;

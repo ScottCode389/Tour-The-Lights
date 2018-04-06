@@ -1,7 +1,6 @@
 .contacts {
     display: flex;
-    justify-content: space-around;  
-    // background: #EEDFCC;
+    justify-content: space-around;   
     background: $color-teal-light;
 	text-align: center;	
     font-size: 17px;
@@ -12,36 +11,48 @@
     line-height: 1.3;
     // padding-top: 18px;
     border: 15px solid $color-white;	
-	// outline-style: solid;
-	// outline-width: 2px;
-    // outline-color: $color-blue-header; 
     
     &__sidebar {
         display: flex;
         flex-direction: column;
+        flex: 0 1 406px;
+        line-height: 1.5;
     }
     
     &__sidebar1 {
         font-style: italic;
-        font-size: 15px;        
+        font-size: 16px;        
         justify-content: center;
         
         & img {
             margin: 0 auto;             
-            height: 125px;   
-            padding-bottom: 10px;        
+            height: 115px;               
+            // border: 1px solid #7497A0;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+            border-radius: 5%;        
+        }
+
+        & p {
+            margin-top: 9px;
         }
     }
 
     &__sidebar2 {        
         justify-content: center;        
-        font-size: 16px;
+        font-size: 17px;
         
         & span {
             font-size: 18px;
-            font-weight: 900;
-            border-bottom: 1px solid $color-new-teal;
-            padding-bottom: 7px;             
+            font-weight: 900;            
+            padding-bottom: 2px;             
+        }
+
+        & hr {
+            width: 50%;
+            height: 1px;
+            margin: 9px auto;            
+            color: $color-new-teal;
+            border: 1px solid $color-new-teal;
         }
     }
 }
