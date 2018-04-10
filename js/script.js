@@ -34,6 +34,11 @@ $('.js--wp-6').waypoint(function(direction) {
   {offset: '50%'
 });
 
+$('.js--wp-7').waypoint(function(direction) {
+  $('.js--wp-7').addClass('animated fadeIn');},
+  {offset: '50%'
+});
+
   
   var map1 = new GMaps({
     div: '.map1',
@@ -122,6 +127,9 @@ $('.js--wp-6').waypoint(function(direction) {
     title: 'Point Fermin Lighthouse' 
   });
 
-
-
+  // $(function(){
+  //   $(window).scroll(function() {              
+  //       ($(document).scrollTop() + $(window).height()) / $(document).height() > 0.90 ? $('.footer').fadeIn() : $('.footer').fadeOut();
+  //   });
+// })
 //   

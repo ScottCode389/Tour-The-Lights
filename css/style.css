@@ -110,6 +110,9 @@ ul {
 .fadeInUp {
   animation-name: fadeInUp; }
 
+.fadeIn {
+  animation-name: fadeIn; }
+
 .contacts {
   display: flex;
   justify-content: space-around;
@@ -152,16 +155,48 @@ ul {
       color: #95b7c0;
       border: 1px solid #95b7c0; }
 
-footer {
+.disclaimer {
   background: #fff;
   height: 50px;
   font-size: 13px;
   font-style: italic;
   text-align: center; }
 
+.footer {
+  height: 325px;
+  width: 100%;
+  background: url("../img/oceanWave5.jpg") no-repeat;
+  background-position: 0% 0%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  opacity: 80%; }
+  .footer__nav {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    right: 10px; }
+    .footer__nav li a {
+      color: #fff;
+      text-shadow: 0px 0.25px 0.25px #fff;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 5px 35px; }
+  .footer__copyright {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    font-size: 12px; }
+
 header {
   background: url("../img/WaltonLHmaybe.jpg") no-repeat top left;
   background-size: cover;
+  background-position: center;
   height: 100vh;
   border: 1px solid #7497A0;
   box-shadow: 0 2px 3px 0 #7497A0;

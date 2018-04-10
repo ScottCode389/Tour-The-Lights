@@ -1,7 +1,7 @@
 .contacts {
     display: flex;
     justify-content: space-around;   
-    background: $color-teal-light;
+    background: $color-teal-light;    
 	text-align: center;	
     font-size: 17px;
     font-weight: 700;
@@ -57,7 +57,7 @@
     }
 }
 
-footer {
+.disclaimer {
     background: $color-white;
     height: 50px;
     font-size: 13px;
