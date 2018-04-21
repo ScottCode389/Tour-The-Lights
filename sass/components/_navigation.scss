@@ -4,8 +4,11 @@
     position:absolute;
     bottom: 185px;
     left: 20px;
-    opacity: 0;
-    animation: 1s fadeIn 2.2s forwards;
+
+    &__home {
+        opacity: 0;
+        animation: 1s fadeIn 2.2s forwards;
+    }
 
     &__list {
         display: flex;
@@ -13,8 +16,7 @@
 
     &__item {
         margin-right: 10px;              
-        list-style: none;
-        // display: inline-block;
+        list-style: none;                
     }
 
     &__link {
@@ -33,7 +35,23 @@
             text-decoration: none;
             background-image: linear-gradient(115deg, transparent 0%, transparent 50%, $color-white 50%);
             background-size: 220%;
-            transition: all .3s;
+            transition: all .3s;  
+            
+            @media only screen and (max-width: 960px) {
+                font-size: 14px;  
+                width: 100px;
+                padding: 5px 10px;          
+            }   
+        }
+
+        &--current {            
+            color: $color-white !important;
+            background: $color-blue-outline !important;            
+            background-size: cover;      
+            background-position: top left;
+            border: 1.3px solid $color-blue-outline !important; 
+            border-radius: 10%;   
+            font-weight: 900;                                
         }
 
         &:hover,

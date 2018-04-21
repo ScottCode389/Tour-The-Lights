@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
 
@@ -13,7 +14,7 @@
 	<title>Tour The Lights > Destinations</title>
 </head>
 <body>
-    <header>
+    <header class = "header header__destination">
         <div class="quickContact">
             1234 ABC Street<br>
             Cincinnati, OH 45202<br>
@@ -27,7 +28,7 @@
             <ul class = "navigation__list">
                 <li class = "navigation__item"><a href="index.html" class = "navigation__link navigation__current-item" title="Tour the Lights">Home</a></li>
                 <li class = "navigation__item"><a href="lighthouseAboutUs.html" class = "navigation__link" title="About Us|Tour the Lights">About Us</a></li>
-                <li class = "navigation__item"><a href="destination.html" class = "navigation__link" title="Destinations|Tour the Lights">Destinations</a></li>	
+                <li class = "navigation__item"><a href="destination.html" class = "navigation__link navigation__link--current" title="Destinations|Tour the Lights">Destinations</a></li>	
                 <!-- <li class = "navigation__item"><a href="lighthouseEvents.html" class = "navigation__link" title="Events|Tour the Lights">Events</a></li> -->
                 <li class = "navigation__item"><a href="lighthouseContacts.html" class = "navigation__link" title="Contact Us|Tour the Lights">Contact Us</a></li>
             </ul>
@@ -35,7 +36,8 @@
      </header> 
      
      <div class="backgroundImage3">        
-            <p>Our travel agents have visited many of the U.S. lighthouses and have first-hand knowledge about the lighthouses, as well as the surrounding areas... lodging, dining, available tours, additional places to sightsee, and the best beaches around.  Each month we choose 3 lighthouses to highlight under our favorite places to go.  <span>We'd love to hear about your favorites.</span></p>
+            <p>Our travel agents have visited many of the U.S. lighthouses and have first-hand knowledge about the lighthouses, as well as the surrounding areas... lodging, dining, available tours, additional places to sightsee, and the best beaches around.</p> <p>Each month we choose 3 lighthouses to highlight under our favorite places to go.<br>  <span> We'd love to hear about YOUR favorites.</span></p>
+            <img src = "../img/icons8-white-lighthouse-64.png">
      </div>
      <table class="centeredTable">
 		<caption class="boldText">OUR FAVORITE DESTINATIONS</caption>
@@ -73,9 +75,22 @@
 				Built in 1875, last screwpile lighthouse on the Bay still in its original location<br>
 				For you history buffs, visit the nearby Annapaolis Maratime Museum for fascinating lectures and tours</td>
  		</tr>
- 	</table>
+     </table>
 
+     <div class = backgroundImage3>
+         <p>To learn more about these destinations and so many others, contact one of our experienced travel agents.</p>  <p>Whether you want to spend a week visiting a group of lighthouses or just see one or two while spending the rest of your time relaxing on the beach, exploring coastal aquariums or museums, enjoying an old bookstore filled with stories about our historical lighthouse past, or hiking in a nearby state park, we can help you plan an itinerary that works with your budget.  We look forward to sharing our passion for lighthouses with you!</p>
+    </div>
+     <div class = "customerReviews">
 
+        <h3>JANUARY CUSTOMER REVIEWS AND RECOMMENDATIONS</h3>
+   
+            <img src="../img/stJosephMichigan.jpg" class="roundBorder" alt="St Joseph Michigan" width="500"/>
+            <p class="textScript"> We enjoyed our trip to St. Joseph North Pier Inner and Outer Lighthouses in Michigan this past June.  Kudos to Stephanie, our awesome travel agent, for setting this lighthouse tour and accompanying travel plans up for us!  This is one you definitely want to see!... Heather B</p>
+       
+       </div>
+   
+        
+        
      <section class="contacts">
 		<div class="contacts__sidebar contacts__sidebar1">
 			<img src="../img/lightatnight.jpg" class="inner" alt="nightlight">
@@ -111,8 +126,9 @@
                 <li class = "nav__item"><a href="destination.html" class = "nav__link3" title="Destinations|Tour the Lights">Destinations</a></li>	
                 <!-- <li class = "navigation__item"><a href="lighthouseEvents.html" class = "navigation__link" title="Events|Tour the Lights">Events</a></li> -->
                 <li class = "nav__item"><a href="lighthouseContacts.html" class = "nav__link4" title="Contact Us|Tour the Lights">Contact Us</a></li>          
-        </ul>   
-        <div class="footer__copyright">Tour the Lights &copy; 2018 Copyright.  No rights reserved.</div>
+        </ul>  
+         
+        <div class="footer__copyright">Tour the Lights &copy; 2018 Copyright - No rights reserved.</div>
         
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

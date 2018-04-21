@@ -1,34 +1,57 @@
-header {
-    // background: url("../img/headerImagecropblue.jpg") no-repeat top left;
-    background: url("../img/WaltonLHmaybe.jpg") no-repeat top left;
-    background-size: cover;  
-    background-position: center;     
-    height: 100vh; 
-    // height: 400px;
+.header {    
+    // background: url("../img/WaltonLHmaybeIpad.jpg") no-repeat top left;  
+    height: 100vh;
+    // background: url("../img/WaltonLHmaybe.jpg") no-repeat;  
+    background-size: cover;      
+    background-position: top left;           
     border: 1px solid $color-teal-dark;   
     box-shadow: 0 2px 3px 0 $color-teal-dark;	
-	position: relative;
+    position: relative;
+
+    &__home {
+        background: url("../img/WaltonLHmaybe.jpg") no-repeat; 
+        background-size: cover;      
+        background-position: top left;
+    }
+
+    &__destination {
+        background: url("../img/headerDestinations.jpeg");
+        background-size: cover;      
+        background-position: top left;
+    }
+    
+    @include large-screens {
+        background: url("../img/WaltonLHcrop.jpg") no-repeat;
+    }    
 }
 
 .heading-primary {
     color: $color-black;
-    padding-left: 20px;
-    backface-visibility: hidden;
+    padding-left: 20px;    
+
+    &--home {
+        backface-visibility: hidden;
+        animation: moveInRight 2s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    }
 
     &--main {
         display: block;
-        font-size: 50px;
-        // padding-top: 30px;
+        font-size: 50px;        
         padding-top: 80px;
-        text-shadow: 1px 1px 4px #d3d3d3;
-        animation: moveInRight 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);    
+        text-shadow: 1px 1px 4px #d3d3d3;  
+        @include large-screens {
+            font-size: 40px;
+            padding-top: 60px;
+        }          
     }
     
     &--sub {
         display: block;
         font-size: 32px;
-        font-style: italic;
-        animation: moveInRight 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);   
+        font-style: italic; 
+        @include large-screens {
+            font-size: 20px;            
+        }          
     }
 }
 
@@ -44,6 +67,15 @@ header {
     bottom: 185px;
     left: 700px;
     font-size: 18px;
+
+    @include large-screens {
+        font-size: 15px;
+        left: 20px;
+        bottom: 300px;            
+    }       
+
+    &__home {
     animation: fadeIn 5s;
+    }
 }
 

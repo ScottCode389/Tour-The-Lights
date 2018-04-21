@@ -3,17 +3,23 @@
 	text-align: center;
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	// border-bottom: 1px dotted $color-black;
-    // border-top: 1px dotted $color-black;
-    
+	padding-top: 25px;
+	padding-bottom: 25px;
+	    
     & span {
-        color: $color-teal-header-address;
+        color: $color-blue-lighthouse-icon;
         font-style: italic;
         font-weight: 900;
         text-decoration-line: underline;
+        padding-top: 10px;
+        padding-bottom: 15px;
     }
+
+    & p {
+        padding: 10px 55px;
+        font-weight: 700;
+        font-size: 18px;
+    }    
 }
 
 table {
@@ -28,40 +34,87 @@ table {
         // font-family: Helvetica;
         font-size: 2em;
         // color: #005D66;
-        color: $color-teal-header-address;
+        color: $color-blue-header;
         font-weight: bold;
         font-family: 'Dancing Script', cursive;    
         background: #EEDFCC;
         padding: 10px;
-        border: 2px solid #008B99;
+        border: 2px solid $color-blue-header;
+        // border: 2px solid #647A80;
     }
     
     & th {
-        border: 2px solid #008B99;
+        border: 2px solid $color-blue-header;
         height: 30px;
-        background-color: #89AEB3;  
+        background-color: $color-blue-header;  
+        color: $color-white;       
+        // background-color: #819fa6;
+        //background-color: color-teal-dark;
     }
 
     & td {
-        border: 2px solid #008B99;
+        border: 2px solid #647A80;
         color: black;
-        background-color: #B0E0E6;
+        background-color: $color-blue-lighthouse-icon-light;        
+        // background-color: rgba($color-new-teal, .6);
+        
         font-family: Helvetica;
         font-size: 20px;
         text-align: center;
         line-height: 1.3;
 
         & img {
-            margin-top: 6px;
+            margin-top: 6px;            
         }
     }   
 }
 
-.roundBorderAqua {
-	border-style: solid;
-    border-color: #005D66;    
+.roundBorder {
+    // border: 2px solid rgb(112, 137, 167);	
+    border: 2px solid rgb(88, 108, 135);	
     border-radius: 5%;    
+    box-shadow: 5px 5px 30px rgb(88, 108, 135);
 }
+
+.roundBorderAqua {
+    border-style: 2px solid #005D66;    
+    border-radius: 5%;          
+}
+
+.spacer {
+    height: 50px;
+}
+
+.padParagraph {
+    padding: 10px 50px;
+}
+
+.customerReviews {   
+    background-color: rgb(115, 136, 164);     
+    background-color: rgb(143, 159, 182);
+    // background: #76AABE;
+    // background-color: rgb(112, 137, 167);
+	padding: 10px;		
+
+    & h3 {
+        padding-bottom: 15px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    
+    & img {
+        display: block;
+        margin:20px auto;
+    }
+
+    & p {             
+        font-family: 'Satisfy', cursive;
+        font-size: 25px;
+        
+    }    
+}
+
+
 
 
 
